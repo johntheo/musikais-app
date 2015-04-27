@@ -17,6 +17,29 @@
 
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/chart.js"></script>
+        
+        <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $.ajax({
+                    url: "http://servidor-musikais.rhcloud.com/recommendation/get/10/10"
+                }).then(function(data, status, jqxhr) {
+                   //changeAudio(data.musicName);
+                   var element = document.getElementById('info2');
+                   var link = 'http://musikais.com/music/' + data.musicName;
+                   element.innerHTML = 'Musica: '  + link;
+
+
+                    var audio = document.getElementById("player");
+                    audio.setAttribute("src", link)      
+                    audio.pause();
+                    audio.load();//suspends and restores all audio element
+                    audio.play();
+                   console.log(jqxhr);
+                });
+            });
+        });
+        </script>
     </head>
     <body>
         <!-- Fixed navbar -->
@@ -48,7 +71,7 @@
     
         <div class="container">
             <div class="row centered">
-                <button type="button" class="btn btn-theme2 btn-lg btn-block" style="font-size: 52px;">
+                <button id="play" type="button" class="btn btn-theme2 btn-lg btn-block" style="font-size: 52px;">
                     <i class="fa fa-play"></i>
                 </button>
             </div>
@@ -74,6 +97,14 @@
                 <p id="info"></p>
             </div>
         </div>
+
+        <div class="container">
+            <div class="row centered" style="margin-bottom:0px;">
+                <p id="info2"></p>
+            </div>
+        </div>
+
+        <audio id="player" src="" controls="controls" autoplay></audio>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
