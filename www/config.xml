@@ -1,18 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <preference name="loglevel" value="DEBUG" />
-    <feature name="Accelerometer">
-        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
-    </feature>
-    <feature name="Compass">
-        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
-    </feature>
     <name>Musikais</name>
     <description>
         Musikais is an application that recommnends related context(environment and localization) music.
     </description>
     <author email="john.theo.souzat@gmail.com.com" href="http://musikais.com.com">
-        Musikais Team
+        Musikais Te
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
