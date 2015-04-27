@@ -7,12 +7,12 @@
     <feature name="Compass">
         <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
     </feature>
-    <name>Hello World</name>
+    <name>Musikais</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Musikais is an application that recommnends related context(environment and localization) music.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="john.theo.souzat@gmail.com.com" href="http://musikais.com.com">
+        Musikais Te
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
