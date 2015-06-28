@@ -1,0 +1,22 @@
+{
+  "name": "musikais-app",
+  "version": "0.0.0",
+  "authors": [
+      "John Theo <john.theo.souza@gmail.com>"
+  ]
+  "homepage": "https://github.com/johntheo/musikais-app",
+  "main": "index.html",
+  "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "polymer-elements": "Polymer/polymer-elements#~0.3.0",
+    "polymer-ui-elements": "Polymer/polymer-ui-elements#~0.3.0"
+  }
+}

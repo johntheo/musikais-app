@@ -39,9 +39,9 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.geolocation": "0.3.12",
     "org.apache.cordova.device-motion": "0.2.11",
-    "org.apache.cordova.device-orientation": "0.3.11"
+    "org.apache.cordova.device-orientation": "0.3.11",
+    "org.apache.cordova.geolocation": "0.3.12"
 }
 // BOTTOM OF METADATA
 });

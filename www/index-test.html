@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Load platform.js for polyfill support. -->
+        <script src="bower_components/platform/platform.js"></script>
+        <!-- import a custom element. -->
+        <link rel="import"
+              href="bower_components/polymer-ui-field/polymer-ui-field.html">
+        <link rel="import"
+              href="bower_components/polymer-ui-icon/polymer-ui-icon.html">
+        <!-- add a wee bit of styling. -->
+        <style>
+            html {
+                font-family: 'Helvetica Neue', 'Roboto', 'Arial', sans-serif;
+                font-size: 14px;
+            }
+
+            polymer-ui-field {
+                border: 1px solid #000;
+                margin: 10px;
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <polymer-ui-field>
+            <polymer-ui-icon icon="favorite"></polymer-ui-icon>
+            <input placeholder="This is a simple Polymer test using the polymer-ui-field and the polymer-ui-icon." flex>
+        </polymer-ui-field>
+    </body>
+</html>
