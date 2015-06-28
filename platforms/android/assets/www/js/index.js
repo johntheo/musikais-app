@@ -74,26 +74,11 @@ function createMarker(latlng, label) {
     }
 
 function initPontos() {
-<<<<<<< HEAD
     $.ajax({
         url: "servidor-musikais.rhcloud.com/recommendation/get/regions"
     }).then(function(data) {
         pontos = data;
     });
-=======
-    pontos['Praça Tiradentes'] = {
-      center: new google.maps.LatLng(-25.428867, -49.271388),  
-    };
-    pontos['Rua das Flores'] = {
-      center: new google.maps.LatLng(-25.431542, -49.274435)  
-    };
-    pontos['Rua 24 Horas'] = {
-      center: new google.maps.LatLng(-25.434584, -49.276731)  
-    };
-    pontos['Casa'] = {
-      center: new google.maps.LatLng(-25.442726, -49.456681)  
-    };
->>>>>>> origin/master
 
     for (var ponto in pontos) {
         var regiaoOptions = {
@@ -103,13 +88,8 @@ function initPontos() {
           fillColor: '#FF0000',
           fillOpacity: 0.35,
           map: map,
-<<<<<<< HEAD
             center: new google.maps.LatLng(ponto.latitude, ponto.longitude),
           radius: ponto.raio;
-=======
-          center: pontos[ponto].center,
-          radius: 50
->>>>>>> origin/master
         };
         // Add the circle for this city to the map.
         regiao = new google.maps.Circle(regiaoOptions);
